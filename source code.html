@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles/main.css" rel="stylesheet">
+    <title>My-Form</title>
+</head>
+
+<body>
+    <div class="mainDiv">
+        <h2>JOIN THE DESK</h2>
+        <form method="POST" class="formBlock">
+            <input type="text" placeholder="Full Name" name="user_name" id="full-name" required>
+            <input type="email" placeholder="Email" name="use_email" id="email" required>
+            <input type="tel" placeholder="Phone Number" name="user_phone" id="phone-number" required>
+            <input type="text" placeholder="Organization" name="oraganization" id="organization" required>
+            <input type="number" placeholder="Year Of Experience" name="year_of_exp" id="exp-year" required>
+            <input type="text" placeholder="City" name="city" id="city" required>
+            <input type="password" placeholder="Password" name="password" id="password" required>
+            <input type="date" id="dob" name="date_of_birth" id="dob" required>
+            <label id="dobLabel" for="dob">Date of Birth</label>
+            <section><span>Upload the scanned application here<span style="font-size: small;">(only pdf is
+                        accepted)</span></span>
+                <input type="file" accept="application/pdf" required>
+            </section>
+            <section>
+                <span>Upload the image here<span style="font-size: small;">(only image file is accepted)</span></span>
+                <input type="file" accept="image/*" required>
+            </section>
+            <button id="register-btn" type="submit">Register</button>
+        </form>
+    </div>
+    <script src="./scripts/main.js"></script>
+</body>
+
+</html>
